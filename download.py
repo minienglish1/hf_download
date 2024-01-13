@@ -7,4 +7,4 @@ args = parser.parse_args()
 
 model = args.model
 print(model)
-huggingface-cli download model
+snapshot_download(repo_id=model)
