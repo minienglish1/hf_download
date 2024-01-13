@@ -5,4 +5,6 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--model", type=str, default="model", help="huggingface model name")
 args = parser.parse_args()
 
-snapshot_download(repo_id="args.model")
+model = args.model
+print(model)
+huggingface-cli download model
