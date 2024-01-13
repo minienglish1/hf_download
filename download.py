@@ -1,3 +1,4 @@
+import argparse
 from huggingface_hub import snapshot_download
 
 parser = argparse.ArgumentParser()
