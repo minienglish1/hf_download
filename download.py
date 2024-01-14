@@ -7,6 +7,6 @@ parser.add_argument("--model", type=str, default="model", help="huggingface mode
 args = parser.parse_args()
 
 model = args.model
-print(model)
+print(f"Downloading model: {model}")
 #hf_hub_download(repo_id=model)
 snapshot_download(repo_id=model, resume_download=True)
