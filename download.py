@@ -9,4 +9,4 @@ args = parser.parse_args()
 model = args.model
 print(model)
 #hf_hub_download(repo_id=model)
-snapshot_download(repo_id=model)
+snapshot_download(repo_id=model, resume_download=True)
